@@ -1,0 +1,36 @@
+{
+  "name": "arr-sorting",
+  "version": "1.0.0",
+  "description": "Sort an array using various popular sorting algorithms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-ci": "jest -i --coverage --config jest.config.ci.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boristane/arr-sorting.git"
+  },
+  "keywords": [
+    "node",
+    "sort",
+    "algorithms"
+  ],
+  "author": "Boris Tane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boristane/arr-sorting/issues"
+  },
+  "homepage": "https://github.com/boristane/arr-sorting#readme",
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "codacy-coverage": "^3.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "jest-junit": "^5.2.0",
+    "jest-silent-reporter": "^0.1.1"
+  }
+}
