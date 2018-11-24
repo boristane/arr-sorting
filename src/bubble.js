@@ -1,7 +1,7 @@
 const utils = require('./utils');
 
 /**
- * Performs bubble sort on an array of objects according to a
+ * Sorts an array of objects according to a
  * compare function using the bubble sort algorithm.
  * @param {Array} arr the array to sort
  * @param {Function} compFunction the function to sort against, default to ascending order
@@ -9,7 +9,6 @@ const utils = require('./utils');
  */
 
 function bubble(arr, compFunction = (a, b) => a - b) {
-  // eslint-disable-next-line no-throw-literal
   if (!utils.isArray(arr)) return undefined;
   if (!utils.isFunction(compFunction)) return arr;
 
