@@ -6,9 +6,32 @@ Sort an array using various popular sorting algorithms in javascript.
 
 ## Installation
 
-## Documentation
+// TODO
+
+## Getting Started
 
 The library contains a set of functions perfroming array sorting using various sorting algorithms.
+
+The sorting functions are not necessarily stable in the algorithmic sense.
+
+All functions work as per the following schema:
+
+```js
+const arr = [2, 5, 10, 5, 32, 6];
+const arrObjects = [ { a: 5, }, { a: 1, }, { a: 4, }, { a: 8, }, ];
+algo(arr); // [2, 5, 5, 6, 10, 32]
+algo(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
+algo(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
+```
+
+Where ``algo`` is one of the following functions:
+
+* [bubble](#bubble)
+* [insertion](#insertion)
+* [merge](#merge)
+* [shell](#shell)
+
+## Documentation
 
 ### bubble
 Sorts an array according to a compare function using the bubble sort algorithm.
@@ -40,6 +63,16 @@ merge(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
 merge(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
 ```
 
-## Licence
+### shell
+Sorts an array according to a compare function using the shell sort algorithm.
+```js
+const arr = [2, 5, 10, 5, 32, 6];
+const arrObjects = [ { a: 5, }, { a: 1, }, { a: 4, }, { a: 8, }, ];
+shell(arr); // [2, 5, 5, 6, 10, 32]
+shell(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
+shell(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
+```
 
-The library is [MIT licenced](LICENCE).
+## License
+
+The library is [MIT licensed](LICENSE).
