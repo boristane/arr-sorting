@@ -10,7 +10,7 @@ Sort an array using various popular sorting algorithms in javascript.
 
 ## Getting Started
 
-The library contains a set of functions perfroming array sorting using various sorting algorithms.
+The library contains a set of functions performing array sorting using various sorting algorithms.
 
 The sorting functions are not necessarily stable in the algorithmic sense.
 
@@ -24,7 +24,7 @@ algo(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
 algo(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
 ```
 
-Where `algo` is one of the following functions:
+where `algo` is one of the following functions:
 
 -   [bubble](#bubble)
 -   [insertion](#insertion)

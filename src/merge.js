@@ -30,8 +30,8 @@ function merge(arr, compFunction = (a, b) => a - b) {
   if (!utils.isFunction(compFunction)) return arr;
 
   if (arr.length <= 1) return arr;
-  let left = arr.slice(0, parseInt(arr.length / 2, 10));
-  let right = arr.slice(parseInt(arr.length / 2, 10), arr.length);
+  let left = arr.slice(0, Math.floor(arr.length / 2));
+  let right = arr.slice(Math.floor(arr.length / 2), arr.length);
   left = merge(left, compFunction);
   right = merge(right, compFunction);
   return arrayMerge(left, right, compFunction);
