@@ -1,6 +1,7 @@
 import bubble from '../src/bubble';
 import merge from '../src/merge';
 import insertion from '../src/insertion';
+import shell from '../src/shell';
 
 const sorting = [
   {
@@ -15,13 +16,21 @@ const sorting = [
     name: 'insertion',
     algo: insertion,
   },
+  {
+    name: 'shell',
+    algo: shell
+  },
 ];
 
-const arrObjects = [ { a: 5, }, { a: 1, }, { a: 4, }, { a: 2, }, { a: 8, }, ];
-const sortedArrObjects = [ { a: 1, }, { a: 2, }, { a: 4, }, { a: 5, }, { a: 8, }, ];
-const arrInt = [ 5, 1, 4, 2, 8, ];
-const sortedArrInt = [ 1, 2, 4, 5, 8, ];
-const descendingOrderSortedArrInt = [ 8, 5, 4, 2, 1, ];
+const arrObjects = [];
+let arrInt = [];
+for (let i = 0; i < 150; i++) {
+  arrInt.push(Math.floor(Math.random() * 100));
+  arrObjects.push({ a: Math.floor(Math.random() * 1000)});
+}
+const sortedArrObjects = [...arrObjects].sort((obj1, obj2) => obj1.a - obj2.a);
+const sortedArrInt = [...arrInt].sort((a, b) => a - b);
+const descendingOrderSortedArrInt = [...arrInt].sort((a, b) => b - a);
 const obj = { a: 1, b: 4, };
 
 sorting.forEach(algo => {
