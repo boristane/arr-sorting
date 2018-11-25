@@ -55,7 +55,7 @@ sorting.forEach(algo => {
     test('on sorted array of int', () => {
       expect(algo.algo(sortedArrInt, (a, b) => a - b)).toEqual(sortedArrInt);
     });
-    test('on sorted array of float', () => {
+    test('on array of float', () => {
       expect(algo.algo(arrFloat, (a, b) => a - b)).toEqual(sortedArrFloat);
     });
     test('on array of objects', () => {
