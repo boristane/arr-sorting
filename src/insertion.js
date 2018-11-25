@@ -16,9 +16,7 @@ function insertion(arr, compFunction = (a, b) => a - b) {
   while (current < result.length) {
     let iter = current;
     while (iter > 0 && compFunction(result[iter - 1], result[iter]) >= 0) {
-      const temp = result[iter];
-      result[iter] = result[iter - 1];
-      result[iter - 1] = temp;
+      utils.swap(result, iter, iter - 1);
       iter -= 1;
     }
     current += 1;
