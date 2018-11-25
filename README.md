@@ -30,6 +30,7 @@ where `algo` is one of the following functions:
 -   [insertion](#insertion)
 -   [merge](#merge)
 -   [shell](#shell)
+-   [heap](#heap)
 
 ## Documentation
 
@@ -79,6 +80,18 @@ const arrObjects = [ { a: 5, }, { a: 1, }, { a: 4, }, { a: 8, }, ];
 shell(arr); // [2, 5, 5, 6, 10, 32]
 shell(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
 shell(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
+```
+
+### heap
+
+Sorts an array according to a compare function using the heap sort algorithm.
+
+```js
+const arr = [2, 5, 10, 5, 32, 6];
+const arrObjects = [ { a: 5, }, { a: 1, }, { a: 4, }, { a: 8, }, ];
+heap(arr); // [2, 5, 5, 6, 10, 32]
+heap(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
+heap(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
 ```
 
 ## License
