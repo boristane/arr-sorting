@@ -2,6 +2,7 @@ import bubble from '../src/bubble';
 import merge from '../src/merge';
 import insertion from '../src/insertion';
 import shell from '../src/shell';
+import heap from '../src/heap';
 
 const sorting = [
   {
@@ -19,6 +20,10 @@ const sorting = [
   {
     name: 'shell',
     algo: shell
+  },
+  {
+    name: 'heap',
+    algo: heap,
   },
 ];
 
