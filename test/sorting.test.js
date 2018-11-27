@@ -3,6 +3,7 @@ import merge from '../src/merge';
 import insertion from '../src/insertion';
 import shell from '../src/shell';
 import heap from '../src/heap';
+import selection from '../src/selection';
 
 const sorting = [
   {
@@ -24,6 +25,10 @@ const sorting = [
   {
     name: 'heap',
     algo: heap,
+  },
+  {
+    name: 'selection',
+    algo: selection,
   },
 ];
 
