@@ -1,6 +1,5 @@
 const utils = require('./utils');
-const search = require('./binarySearch');
-
+const binarySearch = require('./binarySearch');
 
 /**
  * Sorts an array of objects according to a
@@ -13,7 +12,11 @@ function binary(arr, compFunction = (a, b) => a - b) {
   if (!utils.isArray(arr)) return undefined;
   if (!utils.isFunction(compFunction)) return arr;
 
-  const result = [...arr];
+  const result = [];
+  arr.forEach((elt) => {
+    const index = binarySearch(result, compFunction, elt);
+    result.splice(index, 0, elt);
+  });
 
   return result;
 }

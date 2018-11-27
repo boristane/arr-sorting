@@ -31,10 +31,10 @@ const sorting = [
     name: 'selection',
     algo: selection,
   },
-  /* {
+  {
     name: 'binary',
-    algo: binary,
-  }, */
+    algo: binary, 
+  },
 ];
 
 

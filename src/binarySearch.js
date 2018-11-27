@@ -6,7 +6,7 @@ function search(arr, compFunction, elt) {
     if (compFunction(arr[index], elt) < 0) {
       l = index + 1;
     } else if (compFunction(arr[index], elt) > 0) {
-      h = index - 1;
+      h = index;
     } else {
       return index;
     }

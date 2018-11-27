@@ -7,6 +7,7 @@ describe('binary search', () => {
     expect(binarySearch(sortedArrInt, (a, b) => a - b, -1)).toBe(0);
     expect(binarySearch(sortedArrInt, (a, b) => a - b, 90)).toBe(20);
     expect(binarySearch(sortedArrInt, (a, b) => a - b, 10)).toBe(3);
+    expect(binarySearch(sortedArrInt, (a, b) => a - b, 20)).toBe(6);
     expect(binarySearch(sortedArrInt, (a, b) => a - b, 15)).toBe(4);
     expect(binarySearch(sortedArrInt, (a, b) => a - b, 1)).toBe(0);
     expect(binarySearch(sortedArrInt, (a, b) => a - b, 86)).toBe(19);
