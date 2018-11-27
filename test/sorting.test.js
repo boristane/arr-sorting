@@ -4,6 +4,7 @@ import insertion from '../src/insertion';
 import shell from '../src/shell';
 import heap from '../src/heap';
 import selection from '../src/selection';
+import binary from '../src/binary';
 
 const sorting = [
   {
@@ -29,6 +30,10 @@ const sorting = [
   {
     name: 'selection',
     algo: selection,
+  },
+  {
+    name: 'binary',
+    algo: binary, 
   },
 ];
 

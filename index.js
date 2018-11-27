@@ -4,6 +4,7 @@ const insertion = require('./src/insertion');
 const shell = require('./src/shell');
 const heap = require('./src/heap');
 const selection = require('./src/selection');
+const binary = require('./src/binary');
 
 module.exports = {
   bubble,
@@ -12,4 +13,5 @@ module.exports = {
   shell,
   heap,
   selection,
+  binary,
 };
