@@ -5,6 +5,7 @@ import shell from '../src/shell';
 import heap from '../src/heap';
 import selection from '../src/selection';
 import binary from '../src/binary';
+import quick from '../src/quick';
 
 const sorting = [
   {
@@ -34,6 +35,10 @@ const sorting = [
   {
     name: 'binary',
     algo: binary, 
+  },
+  {
+    name: 'quick',
+    algo: quick,
   },
 ];
 
