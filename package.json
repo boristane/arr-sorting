@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test-ci": "jest -i --coverage --config jest.config.ci.js",
-    "build": "webpack"
+    "build": "webpack",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
