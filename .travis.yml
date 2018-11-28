@@ -22,4 +22,6 @@ install:
 script:
   # Tests
   - npm run test
+  # Build
+  - npm run build
 
