@@ -2,7 +2,7 @@
   "name": "arr-sorting",
   "version": "1.0.0",
   "description": "Sort an array using various popular sorting algorithms.",
-  "main": "dist/index.js",
+  "main": "dist/arr-sorting.js",
   "scripts": {
     "test": "jest",
     "test-ci": "jest -i --coverage --config jest.config.ci.js",
