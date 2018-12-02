@@ -1,4 +1,4 @@
-const utils = require('./utils');
+import * as utils from './utils';
 
 function partition(arr, l, h, compFunction) {
   const pivot = h;

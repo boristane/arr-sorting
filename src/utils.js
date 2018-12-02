@@ -14,8 +14,10 @@ function swap(arr, i, j) {
 }
 /* eslint-enable no-param-reassign */
 
-module.exports = {
+/* module.exports = {
   isArray,
   isFunction,
   swap,
-};
+}; */
+
+export { isArray, isFunction, swap };

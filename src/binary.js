@@ -1,6 +1,5 @@
 import binarySearch from './binarySearch';
-
-const utils = require('./utils');
+import * as utils from './utils';
 
 /**
  * Sorts an array of objects according to a

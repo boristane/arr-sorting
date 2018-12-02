@@ -1,4 +1,4 @@
-const utils = require('./utils');
+import * as utils from './utils';
 
 function heapify(arr, depth, index, compFunction) {
   const left = 2 * index + 1;
