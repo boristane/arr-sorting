@@ -1,6 +1,6 @@
 {
   "name": "arr-sorting",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sort an array using various popular sorting algorithms.",
   "main": "dist/arr-sorting.js",
   "scripts": {
