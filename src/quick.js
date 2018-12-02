@@ -30,7 +30,7 @@ function quicksort(arr, l, h, compFunction) {
  * @param {Function} compFunction the function to sort against, default to ascending order
  * @returns {Array} the sorted array
  */
-function quick(arr, compFunction = (a, b) => a - b) {
+export default function quick(arr, compFunction = (a, b) => a - b) {
   if (!utils.isArray(arr)) return undefined;
   if (!utils.isFunction(compFunction)) return arr;
 
@@ -38,5 +38,3 @@ function quick(arr, compFunction = (a, b) => a - b) {
   quicksort(result, 0, result.length - 1, compFunction);
   return result;
 }
-
-module.exports = quick;

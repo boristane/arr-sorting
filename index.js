@@ -1,19 +1,8 @@
-const bubble = require('./src/bubble');
-const merge = require('./src/merge');
-const insertion = require('./src/insertion');
-const shell = require('./src/shell');
-const heap = require('./src/heap');
-const selection = require('./src/selection');
-const binary = require('./src/binary');
-const quick = require('./src/quick');
-
-module.exports = {
-  bubble,
-  merge,
-  insertion,
-  shell,
-  heap,
-  selection,
-  binary,
-  quick,
-};
+export { default as bubble } from './src/bubble';
+export { default as merge } from './src/merge';
+export { default as insertion } from './src/insertion';
+export { default as shell } from './src/shell';
+export { default as heap } from './src/heap';
+export { default as selection } from './src/selection';
+export { default as binary } from './src/binary';
+export { default as quick } from './src/quick';

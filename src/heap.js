@@ -23,7 +23,7 @@ function heapify(arr, depth, index, compFunction) {
  * @param {Function} compFunction the function to sort against, default to ascending order
  * @returns {Array} the sorted array
  */
-function heap(arr, compFunction = (a, b) => a - b) {
+export default function heap(arr, compFunction = (a, b) => a - b) {
   if (!utils.isArray(arr)) return undefined;
   if (!utils.isFunction(compFunction)) return arr;
 
@@ -41,5 +41,3 @@ function heap(arr, compFunction = (a, b) => a - b) {
 
   return sorted;
 }
-
-module.exports = heap;

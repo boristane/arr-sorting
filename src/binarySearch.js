@@ -1,4 +1,4 @@
-function search(arr, compFunction, elt) {
+export default function search(arr, compFunction, elt) {
   let l = 0;
   let h = arr.length;
   let index = l + Math.floor((h - l) / 2);
@@ -14,5 +14,3 @@ function search(arr, compFunction, elt) {
   }
   return index;
 }
-
-module.exports = search;

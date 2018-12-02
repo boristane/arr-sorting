@@ -7,7 +7,7 @@ const utils = require('./utils');
  * @param {Function} compFunction the function to sort against, default to ascending order
  * @returns {Array} the sorted array
  */
-function shell(arr, compFunction = (a, b) => a - b) {
+export default function shell(arr, compFunction = (a, b) => a - b) {
   if (!utils.isArray(arr)) return undefined;
   if (!utils.isFunction(compFunction)) return arr;
 
@@ -29,5 +29,3 @@ function shell(arr, compFunction = (a, b) => a - b) {
   }
   return result;
 }
-
-module.exports = shell;
