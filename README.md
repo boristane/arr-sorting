@@ -6,7 +6,11 @@ Sort an array using various popular sorting algorithms in javascript.
 
 ## Installation
 
-// TODO
+Install from `npm`
+
+```bash
+npm install arr-sorting
+```
 
 ## Getting Started
 
