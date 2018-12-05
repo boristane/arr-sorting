@@ -2,11 +2,13 @@
 
 Sort an array using various popular sorting algorithms in javascript.
 
-[![Build Status](https://travis-ci.org/boristane/arr-sorting.svg?branch=master)](https://travis-ci.org/boristane/arr-sorting) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6f4ef9df6de64d15b32d824c89b05b5e)](https://www.codacy.com/app/boris.tane/arr-sorting?utm_source=github.com&utm_medium=referral&utm_content=boristane/arr-sorting&utm_campaign=Badge_Grade) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![Build Status](https://travis-ci.org/boristane/arr-sorting.svg?branch=master)](https://travis-ci.org/boristane/arr-sorting) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6f4ef9df6de64d15b32d824c89b05b5e)](https://www.codacy.com/app/boris.tane/arr-sorting?utm_source=github.com&utm_medium=referral&utm_content=boristane/arr-sorting&utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/6f4ef9df6de64d15b32d824c89b05b5e)](https://www.codacy.com/app/boris.tane/arr-sorting?utm_source=github.com&utm_medium=referral&utm_content=boristane/arr-sorting&utm_campaign=Badge_Coverage) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+
+[![NPM](https://nodei.co/npm/arr-sorting.png?compact=true)](https://nodei.co/npm/arr-sorting/)
 
 ## Installation
 
-Install from `npm`
+Install via `npm`
 
 ```bash
 npm install arr-sorting
