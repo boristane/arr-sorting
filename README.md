@@ -37,6 +37,7 @@ where `algo` is one of the following functions:
 -   [heap](#heap)
 -   [selection](#selection)
 -   [binary](#binary)
+-   [tim](#tim)
 
 ## Documentation
 
@@ -135,6 +136,19 @@ quick(arr); // [2, 5, 5, 6, 10, 32]
 quick(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
 quick(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
 ```
+
+### tim
+
+Sorts an array according to a compare function using the timsort algorithm.
+
+```js
+const arr = [2, 5, 10, 5, 32, 6];
+const arrObjects = [ { a: 5, }, { a: 1, }, { a: 4, }, { a: 8, }, ];
+tim(arr); // [2, 5, 5, 6, 10, 32]
+tim(arr, (a, b) => b - a); // [32, 10, 6, 5, 5, 2]
+tim(arrObjects, (obj1, obj2) => obj1.a - obj2.a); // [ { a: 1, }, { a: 4, }, { a: 5, }, { a: 8, } ]
+```
+
 
 ## License
 
